@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column {
+  display: flex;
+  gap: 2%;
+}

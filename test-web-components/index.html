@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--  <script type="importmap">-->
+<!--    {-->
+<!--      "imports": {-->
+<!--        "@angular/core": "https://cdn.jsdelivr.net/npm/@angular/core@18.2.10/event-dispatch-contract.min.js",-->
+<!--        "chart.js": "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js",-->
+<!--        "ng2-charts": "https://cdn.jsdelivr.net/npm/ng2-charts@6.0.1/fesm2022/ng2-charts.mjs"-->
+<!--      }-->
+<!--    }-->
+<!--  </script>-->
+
+
+  <!--  <script src="https://cdn.jsdelivr.net/npm/@angular/core@18.2.10/event-dispatch-contract.min.js"></script>-->
+  <!--  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
+  <!--  <script src="https://cdn.jsdelivr.net/npm/ng2-charts/bundles/ng2-charts.umd.min.js"></script>-->
+  <script type="importmap">
+    {
+      "imports": {
+        "d3": "https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.js"
+      }
+    }
+  </script>
+
+  <script src="../dist/angular-element/browser/main.js" type="module"></script>
+
+  <script></script>
+  <link rel="stylesheet" href="../dist/angular-element/browser/styles.css">
+  <title>test </title>
+</head>
+<body>
+<!-- here is our webComponent -->
+<!--<poc-damia-address-form id="adressForm" address-title="Je suis un web component"></poc-damia-address-form>-->
+<!--<poc-damia-graph-example></poc-damia-graph-example>-->
+<poc-damia-bar-d3></poc-damia-bar-d3>
+<!-- script to demonstrate interaction with our webComponent in legacy manner -->
+<!--<script>-->
+<!--  document.getElementById("adressForm").addEventListener("emitAddressValue", (value) => {-->
+<!--    console.log(value.detail);-->
+<!--  })-->
+<!--</script>-->
+</body>
+</html>

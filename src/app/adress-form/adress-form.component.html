@@ -1,0 +1,21 @@
+<form [formGroup]="addressFormGroup" (ngSubmit)="emitAddressValue()" class="flex-column">
+  <mat-card>
+    <mat-card-title>
+      <h1 type="text">{{ this.addressTitle }}</h1>
+    </mat-card-title>
+    <mat-card-content>
+      <label for="city">City: </label>
+      <input id="city" type="text" formControlName="city">
+      @if (this.city.errors && this.city.dirty) {
+        <span>{{ this.city.errors | json }}</span>
+      }
+      <label for="street">Street: </label>
+      <input id="street" type="text" formControlName="street">
+      <button mat-button type="submit">Submit</button>
+    </mat-card-content>
+    <mat-card-footer>
+      <mat-slide-toggle [checked]="addressFormGroup.valid">isValid</mat-slide-toggle>
+    </mat-card-footer>
+  </mat-card>
+</form>
+
